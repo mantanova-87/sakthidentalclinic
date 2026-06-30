@@ -45,15 +45,29 @@ export function Hero() {
                         <div className="relative aspect-[3.18/1] overflow-hidden rounded-2xl border">
                             <Image
                                 src="/assets/Banner_img_1.jpg"
-                                alt="Dental Clinic"
+                                alt="Clinic Image 1"
                                 fill
                                 className="object-cover"
                             />
                         </div>
                         {/* Supporting Images */}
                         <div className="grid grid-cols-2 gap-4">
-                            <div className="aspect-[3.18/1] rounded-2xl border bg-muted" />
-                            <div className="aspect-[3.18/1] rounded-2xl border bg-muted" />
+                            <div className="relative aspect-[3.18/1] overflow-hidden rounded-2xl border">
+                                <Image
+                                    src="/assets/Banner_img_2.jpg"
+                                    alt="Clinic Image 2"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div className="relative aspect-[3.18/1] overflow-hidden rounded-2xl border">
+                                <Image
+                                    src="/assets/Banner_img_3.jpg"
+                                    alt="Clinic Image 3"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
