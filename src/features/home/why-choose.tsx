@@ -17,7 +17,7 @@ export function WhyChoose() {
             title: "Patient-Centric Approach ",
             description: "● We prioritize comfort, safety, and transparency in every treatment we offer",
         },
-        {   icon:"/assets/techdriven.webp",
+        {   icon:"/assets/techdriven.png",
             title: "Technology-Driven Services ",
             description: "● Modern tools and equipment ensure precision and safety. ",
         },
@@ -32,11 +32,11 @@ export function WhyChoose() {
 
                 </div>
 
-                <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 ">
+                <div className="mt-8 grid gap-8  justify-items-center sm:grid-cols-2 lg:grid-cols-4 ">
                     {item.map((item) => (
-                        <div key={item.title} >
+                        <div key={item.title} className="justify-items-center border rounded-xl">
 
-                            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full ">
+                            <div className="mb-4 mt-2  rounded-full ml-2">
                                 <Image
                                     src={item.icon}
                                     alt={item.title}
@@ -46,11 +46,11 @@ export function WhyChoose() {
                                 />
                             </div>
 
-                            <h3 className="font-semibold">
+                            <h3 className="font-semibold ml-2 mr-2 mb-2">
                                 {item.title}
                             </h3>
 
-                            <p className="mt-2 text-sm text-muted-foreground">
+                            <p className="mt-2 text-sm text-muted-foreground ml-3 mr-2 mb-2">
                                 {item.description}
                             </p>
                         </div>
