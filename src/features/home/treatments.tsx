@@ -12,7 +12,7 @@ export function Treatments() {
           </h2>
 
           <p className="mt-4 text-muted-foreground">
-            Section description placeholder.
+            Explore Our Services
           </p>
         </div>
 
