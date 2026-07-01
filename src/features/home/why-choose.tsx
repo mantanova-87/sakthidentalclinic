@@ -9,15 +9,18 @@ export function WhyChoose() {
             title: "All-in-One Care",
             description: "● From general dentistry to specialized treatments, everything under one roof."
         },
-        {   icon:"/assets/experienceddoc.webp",
+        {
+            icon: "/assets/experienceddoc.webp",
             title: "Experienced Doctors",
             description: "● Our dentists are professionally trained and committed to personalized patient care",
         },
-        {   icon:"/assets/patientcentric.jpg",
+        {
+            icon: "/assets/patientcentric.jpg",
             title: "Patient-Centric Approach ",
             description: "● We prioritize comfort, safety, and transparency in every treatment we offer",
         },
-        {   icon:"/assets/techdriven.png",
+        {
+            icon: "/assets/techdriven.png",
             title: "Technology-Driven Services ",
             description: "● Modern tools and equipment ensure precision and safety. ",
         },
@@ -36,23 +39,24 @@ export function WhyChoose() {
                     {item.map((item) => (
                         <div key={item.title} className="justify-items-center border rounded-xl">
 
-                            <div className="mb-4 mt-2  rounded-full ml-2">
+                            <div className=" justify-items-center rounded-full">
                                 <Image
                                     src={item.icon}
                                     alt={item.title}
                                     width={64}
                                     height={64}
-                                    className="object-cover"
+                                    className="object-cover justify-items-center mt-2 ml-2 mr-2 mb-2"
                                 />
+
+
+                                <h3 className="font-bold justify-items-center mt-2 ml-2 mr-2 mb-2">
+                                    {item.title}
+                                </h3>
+
+                                <p className="text-sm font-semibold justify-items-center text-muted-foreground mt-2 ml-2 mr-2 mb-2">
+                                    {item.description}
+                                </p>
                             </div>
-
-                            <h3 className="font-semibold ml-2 mr-2 mb-2">
-                                {item.title}
-                            </h3>
-
-                            <p className="mt-2 text-sm text-muted-foreground ml-3 mr-2 mb-2">
-                                {item.description}
-                            </p>
                         </div>
                     ))}
                 </div>

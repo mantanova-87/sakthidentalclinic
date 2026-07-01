@@ -42,7 +42,7 @@ export function Hero() {
                     {/* Right Images */}
                     <div className="space-y-4">
                         {/* Main Banner (3.18:1) */}
-                        <div className="relative aspect-[3.18/1] overflow-hidden rounded-2xl border">
+                        <div className="relative aspect-[16/9] overflow-hidden rounded-xl border">
                             <Image
                                 src="/assets/Banner_img_1.jpg"
                                 alt="Clinic Image 1"
@@ -52,7 +52,7 @@ export function Hero() {
                         </div>
                         {/* Supporting Images */}
                         <div className="grid grid-cols-2 gap-4">
-                            <div className="relative aspect-[3.18/1] overflow-hidden rounded-2xl border">
+                            <div className="relative aspect-[16/9] overflow-hidden rounded-xl border">
                                 <Image
                                     src="/assets/Banner_img_2.jpg"
                                     alt="Clinic Image 2"
@@ -60,7 +60,7 @@ export function Hero() {
                                     className="object-cover"
                                 />
                             </div>
-                            <div className="relative aspect-[3.18/1] overflow-hidden rounded-2xl border">
+                            <div className="relative aspect-[16/9] overflow-hidden rounded-xl border">
                                 <Image
                                     src="/assets/Banner_img_3.jpg"
                                     alt="Clinic Image 3"
