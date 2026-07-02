@@ -107,7 +107,7 @@ export function Treatments() {
                 building healthy dental habits for a lifetime of bright smiles.</p>
         },
         {
-            icon: "/assets/Flap-Surgery.png",
+            icon: "/assets/Flap-surgery.png",
             title: "Flap Surgery ",
             description: <p>For advanced gum disease, flap surgery may be necessary. Our skilled team at Sakthi Dental
                 Clinic performs this procedure by lifting the gum tissue to remove deep-seated plaque and

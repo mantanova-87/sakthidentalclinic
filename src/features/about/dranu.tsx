@@ -28,7 +28,7 @@ export function Doctor() {
                         </div>
                         <div className="mt-1 mr-1 flex justify-center lg:justify-center mr-1 mb-4">
                             <Image
-                                src="/assets/PFP.JPG"
+                                src="/assets/PFP.jpg"
                                 alt="Clinic Image 1"
                                 width={300}
                                 height={300}
