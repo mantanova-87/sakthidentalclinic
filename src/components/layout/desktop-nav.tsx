@@ -25,7 +25,7 @@ export function DesktopNav() {
             key={item.href}
             href={item.href}
             className={cn(
-              "relative text-sm font-medium transition-colors duration-200",
+              "group relative text-sm font-medium transition-all duration-300 ease-in-out hover:-translate-y-0.5",
               isActive
                 ? "text-primary"
                 : "text-foreground/80 hover:text-primary"
@@ -35,8 +35,10 @@ export function DesktopNav() {
 
             <span
               className={cn(
-                "absolute -bottom-1 left-0 h-0.5 w-full origin-left rounded-full bg-primary transition-transform duration-200",
-                isActive ? "scale-x-100" : "scale-x-0"
+                "absolute -bottom-1 left-0 h-0.5 w-full origin-left rounded-full bg-primary transition-transform duration-300 ease-in-out",
+                isActive
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
               )}
             />
           </Link>

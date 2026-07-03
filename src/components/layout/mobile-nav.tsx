@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
@@ -16,21 +17,23 @@ import {
 
 export function MobileNav() {
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="lg:hidden">
-      <Sheet>
+      <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
           <Button
             variant="ghost"
             size="icon"
             aria-label="Open navigation menu"
+            className="transition-all duration-300 ease-in-out hover:text-primary hover:-translate-y-0.5"
           >
             <Menu className="h-6 w-6" />
           </Button>
         </SheetTrigger>
 
-        <SheetContent side="right" className="w-80">
+        <SheetContent side="right" className="w-80 bg-white">
           <SheetTitle className="sr-only">
             Navigation Menu
           </SheetTitle>
@@ -49,11 +52,12 @@ export function MobileNav() {
                 <Link
                   key={item.href}
                   href={item.href}
+                  onClick={() => setOpen(false)}
                   className={cn(
-                    "rounded-lg px-4 py-3 text-base font-medium transition-colors",
+                    "rounded-lg px-4 py-3 text-base font-medium transition-all duration-300 ease-in-out",
                     isActive
-                      ? "bg-primary text-primary-foreground"
-                      : "hover:bg-muted"
+                      ? "bg-primary text-white"
+                      : "text-foreground hover:bg-[#FDF2F8] hover:text-primary"
                   )}
                 >
                   {item.title}

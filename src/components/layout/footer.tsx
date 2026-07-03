@@ -4,14 +4,12 @@ import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { siteConfig } from "@/config/site";
 import { Container } from "@/components/common/container";
 
-const socialIconClass =
-  "flex h-10 w-10 items-center justify-center rounded-full border bg-background text-muted-foreground transition-all duration-200 hover:-translate-y-1 hover:border-primary hover:text-primary";
-
+const socialIconClass ="flex h-10 w-10 items-center justify-center rounded-full border bg-background text-muted-foreground transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-primary hover:text-primary hover:shadow-md";
 export function Footer() {
   return (
-    <footer className="border-t bg-muted/30">
+    <footer className="border-t bg-accent">
       <Container>
-        <div className="grid gap-8 py-8 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid bg-accent gap-8 py-8 md:grid-cols-2 xl:grid-cols-4">
           {/* Logo & About */}
           <div className="space-y-4">
             <Logo />

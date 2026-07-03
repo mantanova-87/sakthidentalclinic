@@ -8,7 +8,7 @@ export function Logo() {
     <Link
       href="/"
       aria-label={`Go to ${siteConfig.name} homepage`}
-      className="inline-flex transition-opacity duration-200 hover:opacity-90"
+      className="inline-flex transition-all duration-300 ease-in-out hover:opacity-90 hover:-translate-y-0.5"
     >
       <Image
         src={siteConfig.logo}
