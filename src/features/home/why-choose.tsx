@@ -1,6 +1,7 @@
 import { Container } from "@/components/common/container";
 import { Section } from "@/components/common/section";
 import { id } from "zod/locales";
+import { AnimatedDiv } from "@/components/common/animateddivs";
 import Image from "next/image";
 export function WhyChoose() {
     const item = [
@@ -37,7 +38,7 @@ export function WhyChoose() {
 
                 <div className="mt-8 grid gap-8  justify-items-center sm:grid-cols-2 lg:grid-cols-4 ">
                     {item.map((item) => (
-                        <div key={item.title} className="justify-items-center border rounded-xl">
+                        <AnimatedDiv key={item.title} className="justify-items-center border rounded-xl">
 
                             <div className=" justify-items-center rounded-full">
                                 <Image
@@ -57,7 +58,7 @@ export function WhyChoose() {
                                     {item.description}
                                 </p>
                             </div>
-                        </div>
+                        </AnimatedDiv>
                     ))}
                 </div>
             </Container>
