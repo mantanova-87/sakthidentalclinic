@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import { Footer } from "@/components/layout/footer";
 
 import { Navbar } from "@/components/layout/navbar";
@@ -7,14 +7,17 @@ import { siteConfig } from "@/config/site";
 
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -33,14 +36,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${poppins.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen bg-background text-foreground">
+      <body className="min-h-screen bg-background text-slate-600">
         <div className="flex min-h-screen flex-col">
           <Navbar />
 
-          <main className="flex-1">
+          <main className="flex-1 text-slate-600">
             {children}
           </main>
 

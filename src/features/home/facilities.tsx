@@ -29,33 +29,38 @@ export function Facilities() {
         },
     ];
   return (
-    <Section>
-      <Container>
-        <div className="text-center">
-          <h2 className="text-3xl font-bold">
-            Clinic Facilities
-          </h2>
-        </div>
+  <Section className="bg-background text-body">
+    <Container>
+      
+      <div className="text-center">
+        <h2 className="text-3xl font-bold font-heading text-heading">
+          Clinic Facilities
+        </h2>
+      </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-5 lg:grid-cols-5">
-          {item.map((item) => (
-            <div key={item.icon} className="overflow-hidden rounded-xl border">
-              <div className="aspect-square bg-muted">
-                <img
-                  src={item.icon}
-                  alt={item.title}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <div className="p-4 justify-items-center">
-                <h3 className="font-semibold">
-                  {item.title}
-                </h3>
-              </div>
+      <div className="mt-12 grid gap-6 md:grid-cols-5 lg:grid-cols-5">
+        {item.map((item) => (
+          <div
+            key={item.icon}
+            className="overflow-hidden rounded-xl border border-border bg-surface transition-all duration-300 ease-in-out hover:border-primary hover:shadow-md"
+          >
+            <div className="aspect-square bg-section">
+              <img
+                src={item.icon}
+                alt={item.title}
+                className="object-cover w-full h-full"
+              />
             </div>
-          ))}
-        </div>
-      </Container>
-    </Section>
-  );
-}
+
+            <div className="p-4 text-center">
+              <h3 className="font-semibold font-heading text-heading">
+                {item.title}
+              </h3>
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </Container>
+  </Section>
+);}

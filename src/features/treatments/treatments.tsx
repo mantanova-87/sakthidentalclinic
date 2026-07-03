@@ -131,44 +131,47 @@ export function Treatments() {
 
     ]
     return (
-        <Section>
-            <Container className="border rounded-2xl">
-                <div className="text-center mt-2">
-                    <h2 className="text-3xl font-bold">
-                        Treatments
-                    </h2>
-                </div>
+  <Section className="bg-background text-body">
+    <Container className="border border-border rounded-2xl bg-white shadow-sm">
+      
+      <div className="text-center mt-4">
+        <h2 className="text-3xl font-bold font-heading text-heading">
+          Treatments
+        </h2>
+      </div>
 
-                <div className="mt-10 grid gap-6  md:grid-cols-2 lg:grid-cols-3">
-                    {items.map((item) => (
-                        <div key={item.icon} className="overflow-hidden rounded-xl border mb-3">
-                            <div className="aspect-video bg-muted">
-                                <img
-                                    src={item.icon}
-                                    alt={item.title}
-                                    className="object-cover w-full h-full"
-                                />
-                            </div>
-
-                            <div >
-                                <h3 className="font-semibold ml-3 mt-2 mr-3">
-                                    {item.title}
-                                </h3>
-
-                                <h4 className="mt-2 mb-2 ml-3 mr-3 text-lg">
-                                    {item.description}
-                                </h4>
-                            </div>
-                        </div>
-                    ))
-                    }
-                </div>
-            </Container>
-            <div className="mt-10 grid justify-items-center">
-                <Button className="items-center">
-                    <p className="text-xl font-bold ">Book Your Slot Now</p>
-                </Button>
+      <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {items.map((item) => (
+          <div
+            key={item.icon}
+            className="overflow-hidden rounded-xl border border-border bg-surface mb-3 transition-all duration-300 ease-in-out hover:border-primary hover:shadow-md"
+          >
+            <div className="aspect-video bg-section">
+              <img
+                src={item.icon}
+                alt={item.title}
+                className="object-cover w-full h-full"
+              />
             </div>
-        </Section>
-    );
-}
+
+            <div className="p-3">
+              <h3 className="font-semibold font-heading text-heading ml-3 mt-2 mr-3">
+                {item.title}
+              </h3>
+
+              <h4 className="mt-2 mb-2 ml-3 mr-3 text-lg text-body">
+                {item.description}
+              </h4>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+
+    <div className="mt-10 grid justify-items-center">
+      <Button className="bg-primary hover:bg-primaryHover text-white transition-colors duration-300">
+        <p className="text-xl font-bold">Book Your Slot Now</p>
+      </Button>
+    </div>
+  </Section>
+);}
