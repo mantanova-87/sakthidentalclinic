@@ -31,7 +31,7 @@ export function PrivacyConsent() {
       )}
 
       {/* Consent Bar */}
-      <div className="fixed inset-x-0 bottom-0 z-[9999] border-t border-[#E2E8F0] bg-white shadow-2xl">
+      <div className="fixed inset-x-0 bottom-0 z-[9999] ml-4 mr-4  rounded-xl border-t border-[#E2E8F0] bg-white shadow-2xl">
         <div className="mx-auto flex max-w-8xl flex-col gap-6 px-4 py-5 lg:flex-row lg:items-center lg:justify-between lg:px-8">
 
           <div className="flex-1">
