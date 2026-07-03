@@ -82,7 +82,7 @@ export function Treatments() {
           <Link href="/treatments">
           <Button
             size="lg"
-            className="bg-primary hover:bg-primaryHover px-32 text-white transition-colors duration-300"
+            className="bg-primary hover:bg-primaryHover px-8 md:px-16 lg:px-24 text-white transition-colors duration-300"
           >
             View All Treatments
           </Button>
