@@ -48,7 +48,7 @@ export function PrivacyConsent() {
               Policy. Until you agree, access to the website is restricted.
               Click on the link given below to read our complete privacy-policy 
               and other terms and conditions for visiting and accessing this website.
-              Clicking on "Agree and Continue" will imply that you have "Read" and "Accept" 
+              Clicking on "Agree and Continue" will imply that you have "Read","Understood" and then "Accept" 
               all the terms and conditions mentioned on our privacy-policy page.Thank You for visiting us.
             </p>
 
