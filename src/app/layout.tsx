@@ -4,7 +4,6 @@ import { Footer } from "@/components/layout/footer";
 import { PrivacyConsent } from "@/features/privacy-policy";
 import { Navbar } from "@/components/layout/navbar";
 import { siteConfig } from "@/config/site";
-import { RouteGuard } from "@/components/common/route-guard";
 
 import "./globals.css";
 
@@ -45,10 +44,9 @@ export default function RootLayout({
           <Navbar />
 
           <main className="flex-1 text-slate-600">
-            <RouteGuard>
+            
             <PrivacyConsent />
             {children}
-            </RouteGuard>
           </main>
 
           <Footer />

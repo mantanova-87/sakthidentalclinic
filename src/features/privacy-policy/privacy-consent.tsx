@@ -46,6 +46,10 @@ export function PrivacyConsent() {
             <p className="mt-2 max-w-4xl leading-7 text-[#475569]">
               Before using this website, please read and accept our Privacy
               Policy. Until you agree, access to the website is restricted.
+              Click on the link given below to read our complete privacy-policy 
+              and other terms and conditions for visiting and accessing this website.
+              Clicking on "Agree and Continue" will imply that you have "Read" and "Accept" 
+              all the terms and conditions mentioned on our privacy-policy page.Thank You for visiting us.
             </p>
 
             <Link
