@@ -19,9 +19,9 @@ export function AnimatedDiv({
     <motion.div
       initial={{
         opacity: 0,
-        y: 40,
-        rotate: -5,
-        scale: 0.95,
+        y: 24,
+        rotate: -2,
+        scale: 0.98,
       }}
       animate={{
         opacity: 1,
@@ -30,11 +30,11 @@ export function AnimatedDiv({
         scale: 1,
       }}
       transition={{
-        duration: 1,
+        duration: 0.7,
         delay,
         ease: "easeOut",
       }}
-      className={cn(className)}
+      className={cn("transition-all duration-300 ease-in-out", className)}
     >
       {children}
     </motion.div>
